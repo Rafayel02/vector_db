@@ -1,0 +1,63 @@
+{
+  "name": "vector-db-kursayin",
+  "version": "0.0.3",
+  "description": "vector-db-kursayin",
+  "private": true,
+  "scripts": {
+    "start": "node dist/server.js",
+    "release": "standard-version --commit-all --no-verify",
+    "build": "tsc",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.10.0",
+    "@fastify/compress": "6.4.0",
+    "@fastify/cors": "^9.0.1",
+    "@fastify/helmet": "11.1.1",
+    "@fastify/sensible": "5.3.0",
+    "@types/node-forge": "^1.3.8",
+    "@xenova/transformers": "2.7.0",
+    "axios": "^1.0.0",
+    "better-sqlite3": "^9.0.0",
+    "class-transformer": "0.3.1",
+    "class-validator": "0.13.2",
+    "class-validator-jsonschema": "3.1.1",
+    "cookie": "^0.5.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dd-trace": "^3.0.0",
+    "debug": "~2.6.9",
+    "fastify": "4.23.2",
+    "helmet": "^6.0.0",
+    "http-errors": "~1.6.2",
+    "jsonwebtoken": "^9.0.1",
+    "jwks-rsa": "^3.0.1",
+    "moment-timezone": "^0.5.43",
+    "morgan": "~1.9.0",
+    "node-fetch": "^3.3.2",
+    "node-forge": "^1.3.1",
+    "pug": "2.0.0-beta11",
+    "routing-controllers": "^0.9.0",
+    "routing-controllers-openapi": "3.1.0",
+    "service-commons": "^1.16.0",
+    "string-width": "^2.1.1",
+    "typedi": "^0.10.0",
+    "typescript": "5.2.2",
+    "undici": "^5.26.5",
+    "winston": "^3.3.3",
+    "wrap-ansi": "7.0.0"
+  },
+  "devDependencies": {
+    "@types/cookie": "0.5.1",
+    "@types/cors": "2.8.12",
+    "@types/node": "18.16.14",
+    "standard-version": "9.5.0",
+    "supertest": "^3.0.0"
+  },
+  "standard-version": {
+    "scripts": {
+      "postbump": "git add ."
+    }
+  }
+}

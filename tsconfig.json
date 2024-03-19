@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "lib": [
+      "es2019",
+      "es2020.bigint"
+    ],
+    "target": "es2019",
+    "module": "NodeNext",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "NodeNext",
+    "strictNullChecks": false
+  },
+  "include": ["./public", "./src"],
+  "exclude": ["node_modules", "test", "dist"]
+}
